@@ -21,20 +21,10 @@
     "direction": {
       "type": "richtext"
     },
-    "uid": {
-      "type": "uid",
-      "targetField": "title",
-      "required": true
-    },
     "user": {
       "plugin": "users-permissions",
       "model": "user",
       "via": "recipes"
-    },
-    "categories": {
-      "via": "recipes",
-      "collection": "category",
-      "dominant": true
     },
     "comments": {
       "via": "recipe",
@@ -49,6 +39,10 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
+    },
+    "category": {
+      "via": "recipes",
+      "model": "category"
     }
   }
 }

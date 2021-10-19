@@ -16,10 +16,6 @@
       "type": "text",
       "required": true
     },
-    "uid": {
-      "type": "uid",
-      "required": true
-    },
     "recipe": {
       "via": "comments",
       "model": "recipe"
